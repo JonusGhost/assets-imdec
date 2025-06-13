@@ -15,31 +15,35 @@
       padding: 20px;
       border: 1px solid #e0e0e0;
       border-radius: 8px;
-      background-color: #fff;
+      background-color: #ffffff;
     }
     h1 {
-      color: #FF0000;
+      color: #d139a9;
       text-align: center;
     }
     p {
-      color: #333;
+      color: #4a5d77;
       line-height: 1.6;
+      font-size: 15px;
     }
     .button {
       display: inline-block;
       padding: 12px 24px;
-      background-color: #000;
-      color: #fff;
+      background-color: #d139a9;
+      color: #ffffff;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
-      margin: 10px 0;
+      margin: 20px 0;
     }
     .footer {
       margin-top: 30px;
       font-size: 12px;
-      color: #777;
+      color: #4a5d77;
       text-align: center;
+    }
+    .logo {
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -47,22 +51,23 @@
 
   <div class="container">
 
-    <div>
-      <img src="https://jonusghost.github.io/assets-imdec/Foodiexpert-Logo.png" alt="Foodiexpert" width="180">
+    <div class="logo">
+      <img src="https://jonusghost.github.io/assets-imdec/Imdec-Logo.png" alt="IMDEC" width="180">
     </div>
     
-    <h1>🎉 ¡Registro Confirmado! 🎉</h1>
+    <h1>🎉 ¡Tu registro ha sido exitoso! 🎉</h1>
     
-    <p>Estimado/a <strong>{{ $json.body.nombre }}</strong>,</p>
+    <p>Hola <strong>{{ $json.body.nombre }}</strong>,</p>
 
-    <p>Gracias por registrarte a <strong>Foodiexpert</strong>. Estamos emocionados de tenerte con nosotros.</p>
+    <p>Gracias por registrarte a uno de los eventos organizados por <strong>IMDEC</strong>. Nos alegra contar con tu participación en esta experiencia.</p>
 
-    <p>Si tienes alguna duda comunícate con nosotros por vía WhatsApp:</p>
+    <p>Muy pronto recibirás más detalles por este medio. Si tienes alguna duda, puedes comunicarte directamente con nosotros vía WhatsApp:</p>
+
     <div style="text-align: center;">
-      <a href="" class="button" target="_blank">Enviar mensaje</a>
+      <a href="https://wa.me/521XXXXXXXXXX" class="button" target="_blank">Enviar mensaje</a>
     </div>
 
-    <p>Si tienes preguntas, puedes responder a este correo o contactarnos por nuestras redes sociales.</p>
+    <p>También puedes responder a este correo o visitar nuestras redes sociales para más información.</p>
 
     <div class="footer">
       IMDEC | Instituto Mexicano para el Desarrollo Comunitario<br>
